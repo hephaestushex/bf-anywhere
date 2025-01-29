@@ -1,4 +1,13 @@
+const shellHistory = [];
 
+function showShellOutput(shellHistoryArray){
+    let finalShellOutput = "";
+    for (let i=0; i<shellHistoryArray.length; i++){
+        finalShellOutput += shellHistoryArray[i]; 
+        finalShellOutput += "<br>"
+    }
+    return finalShellOutput
+}
 
 function addValue(currentPointer, maxVal, array){
     if (array[currentPointer] == maxVal){
@@ -183,7 +192,8 @@ async function run(command){
 
         }
     }
-    document.getElementById("shellOutput").innerHTML = output;
+    shellHistory.push(output);
+    document.getElementById("shellOutput").innerHTML = showShellOutput(shellHistory);
     console.log(output);
     programRunning = false;
 }
