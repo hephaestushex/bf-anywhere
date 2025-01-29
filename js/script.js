@@ -202,3 +202,45 @@ shell.addEventListener('keypress', function (event) {
         run(program);
     }
 });
+const helpButton = document.getElementById("helpButton");
+const helpText = document.getElementById("helpText");
+let showHelp = false;
+function toggleHelp(){
+    console.log("help request");
+    
+    
+    console.log("event registered")
+    showHelp = !showHelp;
+    if (showHelp) {
+        helpButton.innerHTML = "Hide Help";
+        helpText.style.display = "block";
+        console.log("shown")
+    }
+
+    else{
+        helpButton.innerHTML = "Show Help";
+        helpText.style.display = "none";
+        console.log("hidden");
+    }
+}
+
+document.getElementById("helpButton").addEventListener("click", toggleHelp);
+/*
+const helpButton = document.getElementById("helpButton");
+const helpText = document.getElementById("helpText");
+let showHelp = false;
+helpButton.addEventListener('click', function () {
+    console.log("event registered")
+    showHelp = !showHelp;
+    if (showHelp) {
+        helpButton.innerHTML = "Hide Help";
+        helpText.style.display = "block";
+        console.log("shown")
+    }
+
+    else{
+        helpButton.innerHTML = "Show Help";
+        helpText.style.display = "none";
+        console.log("hidden");
+    }
+})*/

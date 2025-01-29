@@ -1,11 +1,51 @@
-body{
-    font-family: sans-serif;
-
-    background-color: dimgrey;
-};
-
-#shellForm{
+#shellBody{
     background-color: black;
+    border-color: green;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-radius: 2rem;
+    color: green;
+    padding: 2rem;
+}
+
+.shell{
+    background-color: black;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: green;
+    border-width: 0.25rem;
     color: green;
 }
+
+#shell{
+    font-size: x-large;
+}
+
+#helpButton{
+    size: 2rem;
+    border-style: solid;
+    border-color: green;
+    border-radius: 1rem;
+    border-width: 0.25rem;
+    background-color: black;
+    color: green;   
+}
+
+#help-text{
+    display: none;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: dimgray;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
 

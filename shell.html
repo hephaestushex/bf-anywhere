@@ -8,6 +8,8 @@
 </head>
 <body>
     <h1>BFAnywhere Shell</h1>
+    <button id="helpButton">Show Help</button>
+    <div id="helpText">
     <p>Allowed commands:</p>
     <ul>
         <li>></li>
@@ -19,25 +21,27 @@
         <li>[</li>
         <li>]</li>
     </ul>
+    <p>The terminal is resizable, change it to fit your needs.</p>
+    </div>
     <br><br>
     <div id="shellBody">
     <p id="shellOutput">Output will be displayed here</p>
     <form action="#" id="shellForm">
         <label id="shellText">~BFAnywhere$</label><br>
-        <textarea id="shell" name="shell"></textarea>
+        <textarea id="shell" name="shell" class="shell"></textarea>
         <br><br>
         <label id="inputText">Shell Input:</label><br>
-        <input type="text" id="shellInput" name="shell">
+        <input type="text" id="shellInput" name="shell" class="shell">
         <br>
         <br>
         <h3>Environment Variables</h3>
         <p>Make sure to press enter to update variables</p>
         <label>Array Size</label>
-        <input type="text" id="sizeOfArray" name="sizeOfArray"><br><br>
+        <input type="text" id="sizeOfArray" name="sizeOfArray" class="shell"><br><br>
         <label>Cell Max Value</label>
-        <input type="text" id="cellMaxValue" name="cellMaxValue">
+        <input type="text" id="cellMaxValue" name="cellMaxValue" class="shell">
     </form>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.js?ref=v1"></script>
 </body>
 </html>
