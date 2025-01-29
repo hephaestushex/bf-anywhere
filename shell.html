@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shell</title>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <title>shell</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <h1>BFAnywhere Shell</h1>
@@ -21,18 +20,24 @@
         <li>]</li>
     </ul>
     <br><br>
-    <p id="shellOutput"></p>
-    <form class="shell" action="#">
-        <label for="msg">~BFAnywhere$</label>
-        <input type="text" id="shell" name="shell">
+    <div id="shellBody">
+    <p id="shellOutput">Output will be displayed here</p>
+    <form action="#" id="shellForm">
+        <label id="shellText">~BFAnywhere$</label><br>
+        <textarea id="shell" name="shell"></textarea>
+        <br><br>
+        <label id="inputText">Shell Input:</label><br>
+        <input type="text" id="shellInput" name="shell">
         <br>
         <br>
         <h3>Environment Variables</h3>
         <p>Make sure to press enter to update variables</p>
-        <label for="msg">Array Size</label>
+        <label>Array Size</label>
         <input type="text" id="sizeOfArray" name="sizeOfArray"><br><br>
-        <label for="msg">Cell Max Value</label>
+        <label>Cell Max Value</label>
         <input type="text" id="cellMaxValue" name="cellMaxValue">
     </form>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

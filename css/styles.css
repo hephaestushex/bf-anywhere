@@ -1,0 +1,11 @@
+body{
+    font-family: sans-serif;
+
+    background-color: dimgrey;
+};
+
+#shellForm{
+    background-color: black;
+    color: green;
+}
+

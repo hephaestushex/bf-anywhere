@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css?ref=v1">
+    <title>guide</title>
+</head>
+<body>
+    <h1> Guide </h1>
+    <p>Brainf*ck can be hard to code, but it doesn't have to be! Here are some tips to make coding it a bit easier.</p>
+    <ul>
+        <li>Create loops with []. Use a cell as an index, and another as the working cell:
+            <ol>
+                <li>Create a index: > </li>
+                <li>Set index size, for example, 3: >+++ </li>
+                <li>Start loop and move to working cell: >+++[> </li>
+                <li>Do your action, for example, add 4: >+++[>++++ </li>
+                <li>Move back to index, decrement, and close loop >+++[>++++<-] </li>
+            </ol>
+        </li>
+        <li>Factor your index sizes. For example, to type A, use three for loops with 3, 4, 5, and add 5 to the final index to get there faster
+            <ul><li>Example code: +++[>++++[>+++++<-]<-]>>+++++. </li></ul>
+        </li>
+        <li>Use an ASCII chart. There is one at the bottom of the page</li>
+        <li>Brainf*ck is confusing enough. Use comments with " " to make your life easier, and use spaces.
+            <ul><li>Example code: "1st index" +++ [ >++++"2nd index" [ >+++++ "Start dec." <-]<-] >> +++++ "Print". </li></ul>
+        </li>
+        <li>Stick to the default environment variables when starting out. If you know what you are doing, modify the variables.</li>
+    </ul>
+</body>
+</html>
